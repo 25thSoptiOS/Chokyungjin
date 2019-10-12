@@ -5,6 +5,8 @@
 > 1st Seminar Upload Complete.
 
 > 1st assignments Complete.
+>
+> 2nd CoreLocation Complete.
 
 ---
 ## 1st Seminar
@@ -29,3 +31,17 @@
 
 
 <img width="373" alt="스크린샷 2019-09-30 오후 4 19 20" src="https://user-images.githubusercontent.com/46750574/65857666-42b56480-e39f-11e9-89b8-5430be702014.png">
+
+---
+
+## 2nd Seminar
+
+- ### CoreLocation
+
+### ScreenShots
+
+<img width="442" alt="alert" src="https://user-images.githubusercontent.com/46750574/66695067-99079900-ecf7-11e9-8a81-0eb664322a27.png">
+
+
+
+<img width="438" alt="location" src="https://user-images.githubusercontent.com/46750574/66695068-99079900-ecf7-11e9-8543-f1a2216ed171.png">
