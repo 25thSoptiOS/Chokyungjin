@@ -2,11 +2,11 @@
 
 ---
 
-> 1st Seminar Upload Complete.
+> 1st Seminar_HelloWorld Upload Complete.
 
-> 1st assignments Complete.
+> 1st Assignments_Soptsagram Complete.
 >
-> 2nd CoreLocation Complete.
+> 2nd AdvancedSeminar_CoreLocation Complete.
 
 ---
 ## 1st Seminar
@@ -34,7 +34,7 @@
 
 ---
 
-## 2nd Seminar
+## 2nd Advanced_Seminar
 
 - ### CoreLocation
 
@@ -45,3 +45,6 @@
 
 
 <img width="438" alt="location" src="https://user-images.githubusercontent.com/46750574/66695068-99079900-ecf7-11e9-8543-f1a2216ed171.png">
+
+---
+
