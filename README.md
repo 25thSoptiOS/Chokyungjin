@@ -19,7 +19,7 @@
 ---
 
 ### Screenshots
-<img width="374" alt="스크린샷 2019-09-30 오후 4 22 32" src="https://user-images.githubusercontent.com/46750574/65857667-42b56480-e39f-11e9-8e89-0cafbf28db95.png">
+<img width="300" alt="스크린샷 2019-10-22 오전 12 16 09" src="https://user-images.githubusercontent.com/46750574/67220282-75192580-f464-11e9-851c-27a38dd59c1a.png">
 
 ---
 
@@ -33,10 +33,7 @@
 
 ### Screenshots
 
-<img width="415" alt="스크린샷 2019-09-30 오후 4 19 10" src="https://user-images.githubusercontent.com/46750574/65857665-42b56480-e39f-11e9-9e5d-0c09d9a5c53b.png">
-
-
-<img width="373" alt="스크린샷 2019-09-30 오후 4 19 20" src="https://user-images.githubusercontent.com/46750574/65857666-42b56480-e39f-11e9-89b8-5430be702014.png">
+<img width="300" alt="스크린샷 2019-10-22 오전 12 16 31" src="https://user-images.githubusercontent.com/46750574/67220228-5f0b6500-f464-11e9-8539-15285fecd673.png">
 
 ---
 
@@ -48,11 +45,7 @@
 
 ### ScreenShots
 
-<img width="442" alt="alert" src="https://user-images.githubusercontent.com/46750574/66695067-99079900-ecf7-11e9-8a81-0eb664322a27.png">
-
-
-
-<img width="438" alt="location" src="https://user-images.githubusercontent.com/46750574/66695068-99079900-ecf7-11e9-8543-f1a2216ed171.png">
+<img width="300" alt="스크린샷 2019-10-22 오전 12 17 05" src="https://user-images.githubusercontent.com/46750574/67220188-4733e100-f464-11e9-9364-0848dc6f4d04.png">
 
 ---
 
@@ -96,23 +89,17 @@
 //스택뷰 CenterY 잡아와서 constant 계산
 ```
 
-![123스크린샷 2019-10-14 오후 7](https://user-images.githubusercontent.com/46750574/66746834-efbecf80-eebd-11e9-8c78-a0ff6a4e4620.png)
+<img width="325" alt="스크린샷 2019-10-22 오전 12 18 18" src="https://user-images.githubusercontent.com/46750574/67218949-32564e00-f462-11e9-9852-6c68178f9810.png">
 
 ---
 
 ### ScreenShots
 
-![1스크린샷 2019-10-13 오후 3](https://user-images.githubusercontent.com/46750574/66711910-c3c52080-edcf-11e9-8bbb-fd003d64e3a9.png)
+<img width="300" src="https://user-images.githubusercontent.com/46750574/66711910-c3c52080-edcf-11e9-8bbb-fd003d64e3a9.png"><img width="300" src="https://user-images.githubusercontent.com/46750574/66711910-c3c52080-edcf-11e9-8bbb-fd003d64e3a9.png">
 
-![스크린샷 2019-10-13 오후 3](https://user-images.githubusercontent.com/46750574/66711911-c4f64d80-edcf-11e9-966e-9234fa5cee1d.png)
+<img width="300" src="https://user-images.githubusercontent.com/46750574/66711911-c4f64d80-edcf-11e9-966e-9234fa5cee1d.png"><img width="300" src="https://user-images.githubusercontent.com/46750574/66711912-c6c01100-edcf-11e9-98ef-f53b10241e03.png">
 
-![2스크린샷 2019-10-13 오후 3](https://user-images.githubusercontent.com/46750574/66711912-c6c01100-edcf-11e9-98ef-f53b10241e03.png)
+<img width="300" src="https://user-images.githubusercontent.com/46750574/66711947-4c43c100-edd0-11e9-9bdb-cf8c68b2bfec.png"><img width="300" src="https://user-images.githubusercontent.com/46750574/66711946-4c43c100-edd0-11e9-8b36-61f62771f396.png">
 
-![5스크린샷 2019-10-13 오후 3](https://user-images.githubusercontent.com/46750574/66711947-4c43c100-edd0-11e9-9bdb-cf8c68b2bfec.png)
-
-![4스크린샷 2019-10-13 오후 3](https://user-images.githubusercontent.com/46750574/66711946-4c43c100-edd0-11e9-8b36-61f62771f396.png)
-
-![3334스크린샷 2019-10-14 오후 7](https://user-images.githubusercontent.com/46750574/66746837-efbecf80-eebd-11e9-8233-ecd6a8a09748.png)
-
-![333스크린샷 2019-10-14 오후 7](https://user-images.githubusercontent.com/46750574/66746835-efbecf80-eebd-11e9-8d7a-c327ed67dbd7.png)
+<img width="300" src="https://user-images.githubusercontent.com/46750574/67218952-32eee480-f462-11e9-9ab5-c4364cd2c43a.png"><img width="300" src="https://user-images.githubusercontent.com/46750574/67218951-32eee480-f462-11e9-848f-18a31b303d74.png">
 
