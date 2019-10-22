@@ -108,7 +108,7 @@
 
 ## 2nd Assignments
 
-* DataFormatting
+* Data Formatting
 
 ```swift
 //Data Formatting
