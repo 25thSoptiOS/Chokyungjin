@@ -11,6 +11,8 @@
 > #### 2nd  Data_Send, Seminar_StackView Complete.
 >
 > #### 2nd Assignments_Calculator
+>
+> #### 3rd Seminar_ScrollView, CollectionView Complete.
 
 ---
 ## 1st Seminar
@@ -156,3 +158,64 @@
 
 <img width="250" alt="스크린샷 2019-10-22 오후 2 07 02" src="https://user-images.githubusercontent.com/46750574/67260600-20fb5900-f4d7-11e9-81ec-64a5bf4d5b4b.png"><img width="250" alt="스크린샷 2019-10-22 오후 2 07 05" src="https://user-images.githubusercontent.com/46750574/67260601-20fb5900-f4d7-11e9-91e6-8109dab6add7.png"><img width="250" alt="스크린샷 2019-10-22 오후 2 07 23" src="https://user-images.githubusercontent.com/46750574/67260602-2193ef80-f4d7-11e9-814d-43c815e5c89b.png">
 
+---
+
+## 3rd Seminar
+* ScrollView
+* CollectionView
+
+```swift
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    //bannerList의 갯수만큼 return
+        return appDelegate!.bannerList.count
+    
+    }
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+                let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCell", for: indexPath) as! BannerCell // 커스텀 CollectionViewCell의 BannerCell으로 캐스팅 시켜준다.
+                
+                let banner = appDelegate!.bannerList[indexPath.row]
+                bannerCell.banner?.image = banner.bannerImg
+  //bannerCell에 image 넣기.
+                return bannerCell
+  
+    }
+    
+```
+
+<img width="250" alt="스크린샷 2019-10-27 오전 12 02 40" src="https://user-images.githubusercontent.com/46750574/67621798-50e78b00-f84e-11e9-8a95-73cb5c1b26a4.png">
+
+> 스크롤 뷰를 담을 뷰 컨트롤러의 Simulated Size를 fixed 에서 freeform 으로 바꾸고 height 크기를 1000으로 잡아준다
+
+<img width="250" alt="스크린샷 2019-10-27 오전 12 02 58" src="https://user-images.githubusercontent.com/46750574/67621799-50e78b00-f84e-11e9-8635-d9159a58f512.png">
+
+> estimate Size를 Automatic으로 하지말고 Cell Size를 임의로 414, 213.7로 수정한다. Min Spacing 은 0, 0으로 바꿔주자. 그리고 Size 수정이 안되면 스토리보드에서 직접 사이즈를 키워주자
+
+<img width="250" alt="스크린샷 2019-10-27 오전 12 03 17" src="https://user-images.githubusercontent.com/46750574/67621800-51802180-f84e-11e9-8686-95259b70fdcf.png">
+
+> Scroll Direction을 Vertical 에서 Horizontal로 변환해서 세로 스크롤이 아니라 가로스크롤로 할 수 있게 바꿔준다. 그리고 Indicator 속성을 체크해제 
+
+* import Library using Cocoapods
+  * CHIPageControl //Indicator같은 느낌!
+
+<img width="250" alt="스크린샷 2019-10-27 오전 12 10 37" src="https://user-images.githubusercontent.com/46750574/67621803-51802180-f84e-11e9-8785-cf5b59d89961.png">   <img width="250" alt="스크린샷 2019-10-27 오전 12 21 28" src="https://user-images.githubusercontent.com/46750574/67621953-bd16be80-f84f-11e9-821a-a5b9486107ad.png">
+
+```swift
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        let x = scrollView.contentOffset.x
+        let w = scrollView.bounds.size.width
+        let currentPage = Int(ceil(x/w))
+        print(currentPage)
+        self.paging.set(progress: currentPage, animated: true)
+    }
+//@IBOutlet weak var paging: CHIPageControlAleppo!
+//paging을 연결하여 animate 작동시켜주기
+
+```
+
+---
+
+### ScreenShots
+
+<img width="350" alt="스크린샷 2019-10-27 오전 12 07 27" src="https://user-images.githubusercontent.com/46750574/67621801-51802180-f84e-11e9-9bba-31b217ecb28d.png"><img width="350" alt="스크린샷 2019-10-27 오전 12 07 30" src="https://user-images.githubusercontent.com/46750574/67621802-51802180-f84e-11e9-846b-98aa8a4eb93a.png">

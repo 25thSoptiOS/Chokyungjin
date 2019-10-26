@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import CHIPageControl
+
 
 class MainViewController: UIViewController {
     
     
     //IBOUTlet
     @IBOutlet var bannerCV: UICollectionView!
+    @IBOutlet weak var paging: CHIPageControlAleppo!
     
     //vars..
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -35,7 +38,14 @@ class MainViewController: UIViewController {
         appDelegate!.bannerList = [banner1, banner2, banner3]
 
     }
+    
+    
+    
+    
 }
+
+
+
 
 //extension..
 // UICollectionViewDataSource 를 채택합니다.
@@ -82,4 +92,12 @@ extension MainViewController: UICollectionViewDelegate {
     
     }
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        let x = scrollView.contentOffset.x
+        let w = scrollView.bounds.size.width
+        let currentPage = Int(ceil(x/w))
+        print(currentPage)
+        self.paging.set(progress: currentPage, animated: true)
+    }
 }

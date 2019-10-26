@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y5Y-sY-cHC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lVC-jB-v7u">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="1071.0144927536232" y="140.21739130434784"/>
         </scene>
-        <!--Main View Controller-->
+        <!--홈-->
         <scene sceneID="6c6-nr-QtB">
             <objects>
                 <viewController id="y5Y-sY-cHC" customClass="MainViewController" customModule="_nd_StackView" customModuleProvider="target" sceneMemberID="viewController">
@@ -139,10 +139,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-qx-pWw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="951"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovV-1c-tZc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="951"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-iW-9HD" userLabel="BannerCV">
                                                 <rect key="frame" x="0.0" y="21" width="414" height="236"/>
@@ -179,6 +179,26 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <view contentMode="scaleToFill" id="Ebh-Eh-Igm" customClass="CHIPageControlAleppo" customModule="CHIPageControl">
+                                                <rect key="frame" x="313" y="200" width="93" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="currentPageTintColor">
+                                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
@@ -204,18 +224,77 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3QF-ki-fMY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="icon01Fill" selectedImage="icon01Fill" id="tyS-7B-Vmc">
+                        <color key="badgeColor" red="0.88828426599999999" green="0.72827404740000001" blue="0.58036482330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="bannerCV" destination="QG0-iW-9HD" id="NkT-Bq-8mP"/>
+                        <outlet property="paging" destination="Ebh-Eh-Igm" id="she-MS-EUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJi-IF-Gfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765" y="923"/>
+            <point key="canvasLocation" x="2671.0144927536235" y="922.82608695652186"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="as9-6B-xWe">
+            <objects>
+                <viewController id="YOd-as-bLd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfF-Ye-eMe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="db4-45-L4j"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="icon03Fill" id="PUy-hy-aT6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MI-hN-qy2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="1870"/>
+        </scene>
+        <!--글 작성-->
+        <scene sceneID="oeU-BP-Rba">
+            <objects>
+                <viewController id="QS1-MP-n3y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8SJ-EE-PGu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VFT-w4-LkU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="글 작성" image="icon02Fill" id="dYT-dk-6xo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojy-J2-s4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2671" y="1858"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9q0-Fr-6qx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lVC-jB-v7u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OXD-0y-vHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y5Y-sY-cHC" kind="relationship" relationship="viewControllers" id="ZwS-2S-RR5"/>
+                        <segue destination="QS1-MP-n3y" kind="relationship" relationship="viewControllers" id="SNk-He-Ttt"/>
+                        <segue destination="YOd-as-bLd" kind="relationship" relationship="viewControllers" id="pUO-hO-Due"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K55-1u-tPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="922.82608695652186"/>
         </scene>
     </scenes>
     <resources>
         <image name="bgImage" width="414" height="657"/>
+        <image name="icon01Fill" width="27.333333969116211" height="26.666666030883789"/>
+        <image name="icon02Fill" width="27" height="29"/>
+        <image name="icon03Fill" width="26.666666030883789" height="26.666666030883789"/>
         <image name="logoIEumLogin" width="62.666667938232422" height="62.666667938232422"/>
         <image name="mainImage" width="414" height="209"/>
     </resources>

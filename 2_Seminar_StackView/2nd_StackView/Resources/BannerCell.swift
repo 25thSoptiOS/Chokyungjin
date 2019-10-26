@@ -12,4 +12,5 @@ import CHIPageControl
 class BannerCell: UICollectionViewCell {
     
     @IBOutlet var banner: UIImageView?
+    
 }

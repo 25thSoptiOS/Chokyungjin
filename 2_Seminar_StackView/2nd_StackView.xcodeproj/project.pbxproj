@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -99,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				396572392351AEEA00A1010A /* Main.storyboard */,
-				3965723C2351AEEA00A1010A /* Assets.xcassets */,
 				3965723E2351AEEA00A1010A /* LaunchScreen.storyboard */,
+				3965723C2351AEEA00A1010A /* Assets.xcassets */,
 				396BAFAC23641C82007C6E64 /* BannerCell.swift */,
 				396BAFB0236420A8007C6E64 /* Banner.swift */,
 			);
@@ -121,7 +121,6 @@
 				EC879F0186EA9F6B3BEA8BBA /* Pods-2nd_StackView.debug.xcconfig */,
 				E5366B691E5FA5BB85628027 /* Pods-2nd_StackView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
