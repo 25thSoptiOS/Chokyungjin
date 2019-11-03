@@ -12,9 +12,9 @@ import UIKit
 struct Banner {
     var bannerImg: UIImage?
     
+    //init..
     init(bannerName: String){
         self.bannerImg = UIImage(named: bannerName)
-        
     }
     
 }

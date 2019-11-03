@@ -7,5 +7,6 @@ target '2nd_StackView' do
 
   # Pods for 2nd_StackView
 pod 'CHIPageControl', '~> 0.1.3'
+pod 'Alamofire', '~> 4.8.2'
 
 end

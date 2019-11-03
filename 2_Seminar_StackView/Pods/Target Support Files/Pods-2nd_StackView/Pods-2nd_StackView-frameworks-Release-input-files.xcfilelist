@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-2nd_StackView/Pods-2nd_StackView-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework

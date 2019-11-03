@@ -13,6 +13,8 @@
 > #### 2nd Assignments_Calculator
 >
 > #### 3rd Seminar_ScrollView, CollectionView Complete.
+>
+> #### 4th Seminar_ServerLogin.. implementing
 
 ---
 ## 1st Seminar
@@ -219,3 +221,61 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 ### ScreenShots
 
 <img width="350" alt="스크린샷 2019-10-27 오전 12 07 27" src="https://user-images.githubusercontent.com/46750574/67621801-51802180-f84e-11e9-9bba-31b217ecb28d.png"><img width="350" alt="스크린샷 2019-10-27 오전 12 07 30" src="https://user-images.githubusercontent.com/46750574/67621802-51802180-f84e-11e9-846b-98aa8a4eb93a.png">
+
+---
+
+## 4th Seminar
+
+* Alamofire
+* HTTP, REST API
+
+```swift
+//Decodable Protocol..
+//Codable struct 생성
+//Codable protocol은 JSON, plist 등으로 이루어 진 데이터를 편리하게 객체로 변환해주는 protocol..
+//Decodable과 Encodable로 이루어져 있다.
+
+// MARK: - ResponseString // 성공했을 때 response body
+struct ResponseString: Codable {
+    let success: Bool
+    let message: String
+    let data: DataClass?
+    //Codable...
+    //data는 DataClass의 객체
+}
+
+// MARK: - DataClass
+struct DataClass: Codable {
+    let userIdx: Int
+    let id, password, name, phone: String
+    //DataClass는 userIdx, id , password, name, phone의 인스턴스를 가지고있다. 
+    
+}
+```
+
+```swift
+let decoder = JSONDecoder()
+//decode 해주기위한 객체
+print("value", value)
+let result = try decoder.decode(ResponseString.self, from: value)
+//value로 부터 값을 뽑아낸다, ResponseString 을 JSON으로 만들고
+//Decode할 타입으로 만들어줌
+print(result)
+// ResponseString에 있는 success로 분기 처리
+switch result.success {
+//ResponseString에서 만든 Bool 형의 success
+  case true:
+  print("success")
+  completion(.success(result.data))
+  //completion으로 result.data 전달
+  case false:
+  completion(.requestErr(result.message))
+  //completion으로 result.message 전달
+}
+```
+
+---
+
+### ScreenShot
+
+<img width="300" alt="스크린샷 2019-11-04 오전 12 15 56" src="https://user-images.githubusercontent.com/46750574/68087366-7b61c580-fe98-11e9-9180-43e41e1cb439.png"><img width="300" alt="스크린샷 2019-11-04 오전 12 16 10" src="https://user-images.githubusercontent.com/46750574/68087368-7bfa5c00-fe98-11e9-9353-58d40e4f3d95.png"><img width="300" alt="스크린샷 2019-11-04 오전 12 16 06" src="https://user-images.githubusercontent.com/46750574/68087367-7bfa5c00-fe98-11e9-8a18-1044b3680ced.png">

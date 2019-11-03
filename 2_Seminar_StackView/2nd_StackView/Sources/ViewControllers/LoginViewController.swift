@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var stackViewCenterY: NSLayoutConstraint!
     
     
+    //Vars..
+   
     
     //inits...
     override func viewDidLoad() {
@@ -33,6 +35,7 @@ class LoginViewController: UIViewController {
         
         
         initGestureRecognizer()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +45,64 @@ class LoginViewController: UIViewController {
         unregisterForKeyboardNotifications()
     }
    
-
+    //alertAction..
+    func simpleAlert(title: String, message: String, type: Int?){
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        var ok: UIAlertAction
+        if type == 0{
+            ok = UIAlertAction(title: "확인", style: .cancel)
+        }else{
+            ok = UIAlertAction(title: title, style: .cancel, handler: {action in
+                self.dismiss(animated: true)
+            })
+            
+        }
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true)
+    }
+    
+    @IBAction func LoginFunc(_ sender: Any) {
+        guard let id = idTextField.text else { return }
+        guard let pwd = pwTextField.text else { return }
+       
+        
+        //싱글톤 객체로 접근
+        LoginService.shared.login(id, pwd) {
+            data in
+            //Closure...
+            switch data {
+                //로그인 성공시
+            case .success(let data):
+                let user_data = data as! DataClass
+            // 사용자의 토큰, 이름, 이메일, 전화번호 받아오기
+            // 비밀번호는 안 받아와도 됨
+                UserDefaults.standard.set(user_data.userIdx, forKey: "token")
+                UserDefaults.standard.set(user_data.name, forKey: "name")
+                UserDefaults.standard.set(user_data.phone, forKey: "phone")
+                
+                let main = self.storyboard!.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarViewController
+                main.modalPresentationStyle = .fullScreen
+                self.present(main, animated: true)
+                
+                
+            case .requestErr(let message):
+                self.simpleAlert(title: "로그인 실패", message: "\(message)", type: 0)
+                
+            case .pathErr: print(".pathErr")
+                
+            case .serverErr: print(".serverErr")
+                
+            case .networkFail:
+                self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.", type: 1)
+            }
+    
+        }
+        
+    }
+    
 }
 
 // 키보드 때문에 가려지지 않게 조정하는 extension

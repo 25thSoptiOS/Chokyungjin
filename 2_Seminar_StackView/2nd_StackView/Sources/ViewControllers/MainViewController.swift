@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     
     //vars..
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
-
+    //AppDelegate객체를 캐스팅하여 생성
     
     //inits..
     override func viewDidLoad() {
@@ -28,6 +28,7 @@ class MainViewController: UIViewController {
         setBanner()
         bannerCV.delegate = self
         bannerCV.dataSource = self
+        //CollectionView의 델리게이트와 데이터소스를 받아옴.
     }
     
     func setBanner() {
@@ -88,7 +89,7 @@ extension MainViewController: UICollectionViewDataSource {
 
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
+    //아직 셀에대한 Select 이벤트는 작성 x
     
     }
     
