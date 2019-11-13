@@ -14,12 +14,6 @@
       "idiom" : "universal",
       "filename" : "icon02Fill@3x.png",
       "scale" : "3x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "icon02Fill.png",
-      "unassigned" : true,
-      "scale" : "1x"
     }
   ],
   "info" : {

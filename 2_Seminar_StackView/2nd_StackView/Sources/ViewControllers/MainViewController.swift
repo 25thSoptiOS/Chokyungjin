@@ -63,28 +63,22 @@ extension MainViewController: UICollectionViewDataSource {
     
    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
-//            if collectionView == self.workCV {
-//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorkCell", for: indexPath) as! WorkCell
-//
-//                let work = appDelegate.workList[indexPath.row]
-//
-//                cell.workIdx = work.workIdx
-//                cell.workImg.image = work.workMainImg
-//
-//                return cell
-//            }
-//            else {
                 let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCell", for: indexPath) as! BannerCell
                 
                 let banner = appDelegate!.bannerList[indexPath.row]
                 bannerCell.banner?.image = banner.bannerImg
+                bannerCell.banner?.contentMode = .scaleToFill
                 
-       //         bannerCell.banner = bannerList
                 return bannerCell
-    //        }
-  //      }
+ 
     }
     
+}
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
 }
 
 extension MainViewController: UICollectionViewDelegate {
@@ -101,4 +95,6 @@ extension MainViewController: UICollectionViewDelegate {
         print(currentPage)
         self.paging.set(progress: currentPage, animated: true)
     }
+   
+    
 }

@@ -219,6 +219,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 ---
 
 ### ScreenShots
+* 아직 세로 스크롤 뷰는 구현하지 X
 
 <img width="350" alt="스크린샷 2019-10-27 오전 12 07 27" src="https://user-images.githubusercontent.com/46750574/67621801-51802180-f84e-11e9-9bba-31b217ecb28d.png"><img width="350" alt="스크린샷 2019-10-27 오전 12 07 30" src="https://user-images.githubusercontent.com/46750574/67621802-51802180-f84e-11e9-846b-98aa8a4eb93a.png">
 
@@ -278,4 +279,5 @@ switch result.success {
 
 ### ScreenShot
 
-<img width="300" alt="스크린샷 2019-11-04 오전 12 15 56" src="https://user-images.githubusercontent.com/46750574/68087366-7b61c580-fe98-11e9-9180-43e41e1cb439.png"><img width="300" alt="스크린샷 2019-11-04 오전 12 16 10" src="https://user-images.githubusercontent.com/46750574/68087368-7bfa5c00-fe98-11e9-9353-58d40e4f3d95.png"><img width="300" alt="스크린샷 2019-11-04 오전 12 16 06" src="https://user-images.githubusercontent.com/46750574/68087367-7bfa5c00-fe98-11e9-8a18-1044b3680ced.png">
+<img width="300" alt="스크린샷 2019-11-12 오후 4 05 21" src="https://user-images.githubusercontent.com/46750574/68649587-6525ca80-0566-11ea-869d-db53ebf657ed.png"><img width="300" alt="스크린샷 2019-11-04 오전 12 16 06" src="https://user-images.githubusercontent.com/46750574/68087367-7bfa5c00-fe98-11e9-8a18-1044b3680ced.png">
+<img width="350" alt="스크린샷 2019-11-12 오후 4 05 29" src="https://user-images.githubusercontent.com/46750574/68649588-6525ca80-0566-11ea-897c-5218620d2b29.png"><img width="300" alt="스크린샷 2019-11-12 오후 4 05 59" src="https://user-images.githubusercontent.com/46750574/68649589-65be6100-0566-11ea-950d-d6009cd51d3d.png">

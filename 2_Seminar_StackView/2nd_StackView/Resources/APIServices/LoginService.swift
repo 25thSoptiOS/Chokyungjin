@@ -49,7 +49,7 @@ struct LoginService {
                                         //ResponseString에서 만든 Bool 형의 success
                                         case true:
                                             print("success")
-                                            completion(.success(result.data))
+                                            completion(.success(result.data!))
                                             //completion으로 result.data전달
                                         case false:
                                             completion(.requestErr(result.message))

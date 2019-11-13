@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
       
         
-        loginBtn.layer.cornerRadius = self.loginBtn.frame.width / 50
+        loginBtn.layer.cornerRadius = self.loginBtn.frame.width / 20
         loginBtn.layer.borderColor = CGColor(srgbRed: 255, green: 255, blue: 255, alpha: 1)
         loginBtn.layer.borderWidth = 1
         loginBtn.layer.masksToBounds = true
