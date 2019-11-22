@@ -14,7 +14,9 @@
 >
 > #### 3rd Seminar_ScrollView, CollectionView Complete.
 >
-> #### 4th Seminar_ServerLogin.. implementing
+> #### 4th Seminar_ServerLogin Complete
+>
+> #### 5th Seminar_GS25_WITH_Design Completed
 
 ---
 ## 1st Seminar
@@ -281,3 +283,24 @@ switch result.success {
 
 <img width="300" alt="스크린샷 2019-11-12 오후 4 05 21" src="https://user-images.githubusercontent.com/46750574/68649587-6525ca80-0566-11ea-869d-db53ebf657ed.png"><img width="300" alt="스크린샷 2019-11-04 오전 12 16 06" src="https://user-images.githubusercontent.com/46750574/68087367-7bfa5c00-fe98-11e9-8a18-1044b3680ced.png">
 <img width="350" alt="스크린샷 2019-11-12 오후 4 05 29" src="https://user-images.githubusercontent.com/46750574/68649588-6525ca80-0566-11ea-897c-5218620d2b29.png"><img width="300" alt="스크린샷 2019-11-12 오후 4 05 59" src="https://user-images.githubusercontent.com/46750574/68649589-65be6100-0566-11ea-950d-d6009cd51d3d.png">
+
+---
+## 5th Seminar
+
+* XLPagerTabStrip
+* 상단 탭바
+* Programmingly implementing components without Storyboard
+
+```swift
+let point1LeadingConstraint = NSLayoutConstraint(item: pointLabel1, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 62.5)
+// LeadingConstraint를 코드로 구현
+let point1VerticalSpace = NSLayoutConstraint(item:pointLabel1, attribute: .top, relatedBy: .equal, toItem: nameLabel, attribute: .bottom, multiplier: 1, constant: 2)
+// VerticalConstraint를 코드로 구현
+NSLayoutConstraint.activate([point1WidthConstraint, point1HeightConstraint, point1LeadingConstraint, point1VerticalSpace])
+
+```
+
+---
+### ScreenShot
+
+<img width="300" alt="스크린샷 2019-11-21 오후 11 41 08" src="https://user-images.githubusercontent.com/46750574/69348579-c150c300-0cb9-11ea-853b-116ae912a3fd.png"><img width="300" alt="스크린샷 2019-11-22 오후 2 50 40" src="https://user-images.githubusercontent.com/46750574/69401151-9dcc5d80-0d37-11ea-9d8e-0d2a72657c29.png">
