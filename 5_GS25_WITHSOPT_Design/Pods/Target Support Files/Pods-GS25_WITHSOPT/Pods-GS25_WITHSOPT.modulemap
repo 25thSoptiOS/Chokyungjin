@@ -1,0 +1,6 @@
+framework module Pods_GS25_WITHSOPT {
+  umbrella header "Pods-GS25_WITHSOPT-umbrella.h"
+
+  export *
+  module * { export * }
+}

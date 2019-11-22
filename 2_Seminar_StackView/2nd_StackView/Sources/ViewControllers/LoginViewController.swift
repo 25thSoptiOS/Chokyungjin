@@ -76,12 +76,13 @@ class LoginViewController: UIViewController {
             switch data {
                 //로그인 성공시
             case .success(let data):
-                let user_data = data as! DataClass
+                print("!!!!!!")
+             //   let user_data = data as! DataClass
             // 사용자의 토큰, 이름, 이메일, 전화번호 받아오기
             // 비밀번호는 안 받아와도 됨
-                UserDefaults.standard.set(user_data.userIdx, forKey: "token")
-                UserDefaults.standard.set(user_data.name, forKey: "name")
-                UserDefaults.standard.set(user_data.phone, forKey: "phone")
+           //     UserDefaults.standard.set(user_data.userIdx, forKey: "token")
+           //     UserDefaults.standard.set(user_data.name, forKey: "name")
+            //    UserDefaults.standard.set(user_data.phone, forKey: "phone")
                 
                 let main = self.storyboard!.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarViewController
                 main.modalPresentationStyle = .fullScreen
@@ -92,8 +93,10 @@ class LoginViewController: UIViewController {
                 self.simpleAlert(title: "로그인 실패", message: "\(message)", type: 0)
                 
             case .pathErr: print(".pathErr")
+                print(222)
                 
             case .serverErr: print(".serverErr")
+                print(333)
                 
             case .networkFail:
                 self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.", type: 1)

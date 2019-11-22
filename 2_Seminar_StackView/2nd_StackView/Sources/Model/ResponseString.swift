@@ -22,8 +22,10 @@ struct ResponseString: Codable {
 
 // MARK: - DataClass
 struct DataClass: Codable {
-    let userIdx: Int
-    let id, password, name, phone: String
+   // let userIdx: Int
+  //  let id, password, name, phone: String
+    let id , password: String
     //DataClass는 userIdx, id , password, name, phone의 인스턴스를 가지고있다. 
     
 }
+
