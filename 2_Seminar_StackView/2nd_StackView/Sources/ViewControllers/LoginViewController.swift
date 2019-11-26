@@ -65,46 +65,89 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func LoginFunc(_ sender: Any) {
-        guard let id = idTextField.text else { return }
-        guard let pwd = pwTextField.text else { return }
-       
+//
+//        guard let id = idTextField.text else { return }
+//        guard let pwd = pwTextField.text else { return }
+//
+//
+//        //싱글톤 객체로 접근
+//        LoginService.shared.login(id, pwd) {
+//            data in
+//            //Closure...
+//            switch data {
+//                //로그인 성공시
+//            case .success(let data):
+//                print("!!!!!!")
+//                let user_data = data as! DataClass
+//            // 사용자의 토큰, 이름, 이메일, 전화번호 받아오기
+//           //  비밀번호는 안 받아와도 됨
+//                UserDefaults.standard.set(user_data.userIdx, forKey: "token")
+//                UserDefaults.standard.set(user_data.name, forKey: "name")
+//                UserDefaults.standard.set(user_data.phone, forKey: "phone")
+//
+//                let main = self.storyboard!.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarViewController
+//                main.modalPresentationStyle = .fullScreen
+//                self.present(main, animated: true)
+//
+//
+//            case .requestErr(let message):
+//                self.simpleAlert(title: "로그인 실패", message: "\(message)", type: 0)
+//
+//            case .pathErr: print(".pathErr")
+//                print(222)
+//
+//            case .serverErr: print(".serverErr")
+//                print(333)
+//
+//            case .networkFail:
+//                self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.", type: 1)
+//            }
+//
+//        }
+//
+//    }
         
-        //싱글톤 객체로 접근
-        LoginService.shared.login(id, pwd) {
-            data in
-            //Closure...
-            switch data {
-                //로그인 성공시
-            case .success(let data):
-                print("!!!!!!")
-             //   let user_data = data as! DataClass
-            // 사용자의 토큰, 이름, 이메일, 전화번호 받아오기
-            // 비밀번호는 안 받아와도 됨
-           //     UserDefaults.standard.set(user_data.userIdx, forKey: "token")
-           //     UserDefaults.standard.set(user_data.name, forKey: "name")
-            //    UserDefaults.standard.set(user_data.phone, forKey: "phone")
+        // 로그인 서버 통신 구현 코드
+            guard let id = idTextField.text else { return }
+            guard let pwd = pwTextField.text else { return }
+            
+            LoginService.shared.login(id, pwd) {
+                data in
                 
-                let main = self.storyboard!.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarViewController
-                main.modalPresentationStyle = .fullScreen
-                self.present(main, animated: true)
-                
-                
-            case .requestErr(let message):
-                self.simpleAlert(title: "로그인 실패", message: "\(message)", type: 0)
-                
-            case .pathErr: print(".pathErr")
-                print(222)
-                
-            case .serverErr: print(".serverErr")
-                print(333)
-                
-            case .networkFail:
-                self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.", type: 1)
+                switch data {
+                    
+                case .success(let data):
+                    
+                    // DataClass 에서 받은 유저 정보 반환
+                    let user_data = data as! DataClass
+                    
+                    // 사용자의 토큰, 이름, 이메일, 전화번호 받아오기
+                    // 비밀번호는 안 받아와도 됨
+                    UserDefaults.standard.set(user_data.userIdx, forKey: "token")
+                    UserDefaults.standard.set(user_data.name, forKey: "name")
+                    UserDefaults.standard.set(user_data.phone, forKey: "phone")
+                    
+                    print(UserDefaults.standard.value(forKey: "token"))
+                    
+                   let main = self.storyboard!.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarViewController
+                                    main.modalPresentationStyle = .fullScreen
+                                    self.present(main, animated: true)
+                    
+                    
+                case .requestErr(let message):
+                    self.simpleAlert(title: "로그인 실패", message: "\(message)", type: 0)
+                case .pathErr:
+                    print(".pathErr")
+                    
+                case .serverErr:
+                    print(".serverErr")
+                    
+                case .networkFail:
+                    self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.", type: 1)
+                }
             }
-    
         }
-        
-    }
+    
     
 }
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// 네트워크 상태의 5가지 결과 (성공, 요청 에러, 경로 에러, 서버 에러, 통신 실패)
 //열거형 정의.. case별로 구분
 enum NetworkResult<T> {
     case success(T)
@@ -19,14 +19,28 @@ enum NetworkResult<T> {
 }
 
 //API 주소별로 인스턴스 생성
-struct APIConstants {
-    // 전역 변수로 사용할 수 있게 APIConstants 선언하여 사용
+//struct APIConstants {
+//    // 전역 변수로 사용할 수 있게 APIConstants 선언하여 사용
 //    static let BaseURL = "http://106.10.59.71:3000/users"
-      static let BaseURL = "https://seunghun-empcs.run.goorm.io/api/auth"
+//     // static let BaseURL = "https://seunghun-empcs.run.goorm.io/api/auth"
+//
+//    /* 유저(User) */
+//    static let LoginURL = BaseURL + "/signin" // 로그인
+//   // static let LoginURL = BaseURL + "/signin" // 로그인
+//
+//    static let SignupURL = BaseURL + "/signup" // 회원가입
+//}
 
+struct APIConstants {
+    
+    // 전역 변수로 사용할 수 있게 APIConstants 선언하여 사용
+    static let BaseURL = "http://106.10.59.71:3000/users"
+    
+    
     /* 유저(User) */
-   // static let LoginURL = BaseURL + "/signin" // 로그인
     static let LoginURL = BaseURL + "/signin" // 로그인
-
     static let SignupURL = BaseURL + "/signup" // 회원가입
+    
+    
 }
+

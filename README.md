@@ -10,13 +10,15 @@
 >
 > #### 2nd  Data_Send, Seminar_StackView Complete.
 >
-> #### 2nd Assignments_Calculator
+> #### 2nd Assignments_Calculator Complete.
 >
 > #### 3rd Seminar_ScrollView, CollectionView Complete.
 >
-> #### 4th Seminar_ServerLogin Complete
+> #### 4th Seminar_ServerLogin Complete.
 >
-> #### 5th Seminar_GS25_WITH_Design Completed
+> #### 5th Seminar_GS25_WITH_Design Complete.
+>
+> #### 6th Seminar_GS25_WITH_Server Implementing..
 
 ---
 ## 1st Seminar
@@ -304,3 +306,41 @@ NSLayoutConstraint.activate([point1WidthConstraint, point1HeightConstraint, poin
 ### ScreenShot
 
 <img width="300" alt="스크린샷 2019-11-21 오후 11 41 08" src="https://user-images.githubusercontent.com/46750574/69348579-c150c300-0cb9-11ea-853b-116ae912a3fd.png"><img width="300" alt="스크린샷 2019-11-22 오후 2 50 40" src="https://user-images.githubusercontent.com/46750574/69401151-9dcc5d80-0d37-11ea-9d8e-0d2a72657c29.png">
+
+---
+
+## 6th Seminar
+
+* Alamofire
+* Postman
+
+```swift
+//상품 조회하는 func.. 싱글턴으로 통신 성공한 데이터를 관리하여 data를 캐스팅!
+func StorageCheck() {
+        DataManager.sharedManager.productCheck()
+            {
+                data in        
+                switch data {
+                case .success(let data):
+                    DataManager.sharedManager.setStorageList(list: data as! [DataClass])
+                    self.setUp()
+                  //setUp으로 getStorageList()시켜준다
+                case .requestErr(let message):
+                    self.simpleAlert(title: "로그인 실패", message: "\(message)", type: 0)
+                case .pathErr:
+                    print(".pathErr")
+                case .serverErr:
+                    print(".serverErr")
+                case .networkFail:
+                    self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.", type: 1)
+                }
+        }
+    }
+```
+
+---
+
+### ScreenShots
+
+<img width="300" alt="스크린샷 2019-11-25 오후 4 35 42" src="https://user-images.githubusercontent.com/46750574/69521160-b2ac2980-0fa1-11ea-9d19-36e105e5b3bf.png">
+

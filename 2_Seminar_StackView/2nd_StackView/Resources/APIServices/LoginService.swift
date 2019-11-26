@@ -14,7 +14,7 @@ struct LoginService {
     static let shared = LoginService()
     //구조체의 정적 객체 생성
     
-    func login(_ id: String, _ password: String , completion: @escaping (NetworkResult<Any>) -> Void) {
+    func login(_ id: String, _ pwd: String , completion: @escaping (NetworkResult<Any>) -> Void) {
         //login의 대한 함수
         
         let header: HTTPHeaders = [
@@ -23,7 +23,7 @@ struct LoginService {
         //헤더는 : 형식으로 작성해야함.
         let body: Parameters = [
             "id":id,
-            "password":password]
+            "pwd":pwd]
         //Parameters엔 id, pwd를 가지고있다.
         
     //1: URL 주소, 2: method 방법 3: 파라미터 , 4: encoding 방식 , 5: header 종류
@@ -33,46 +33,32 @@ struct LoginService {
                 if let value = response.data {
                     if let status = response.response?.statusCode {
                         print(status)
-                        //print(response.request, response.response, response.result)
+//                        print(response.request, response.response, response.result)
                         switch status {
-                            //status 가 200이면 통신 성공
                                 case 200:
                                     do {
-//                                        let decoder = JSONDecoder()
-//                                        //decode 해주기위한 객체
+                                        let decoder = JSONDecoder()
 //                                        print("value", value)
-//                                        let result = try decoder.decode(ResponseString.self, from: value)
-//                                        //value로 부터 값을 뽑아낸다, ResponseString 을 JSON으로 만들고
-//                                        //Decode할 타입으로 만들어줌
-//                                        print(result)
-//
-//                                        // ResponseString에 있는 success로 분기 처리
-//                                        switch result.success {
-//                                        //ResponseString에서 만든 Bool 형의 success
-//                                        case true:
-//                                            print("success")
-//                                            completion(.success(result.data!))
-//                                            //completion으로 result.data전달
-//                                        case false:
-//                                            completion(.requestErr(result.message))
-//                                            //completion으로 result.message전달
-//                                        }
+                                        let result = try decoder.decode(ResponseString.self, from: value)
                                         
-                                        completion(.success(value.base64EncodedData()))
+                                        // ResponseString에 있는 success로 분기 처리
+                                        switch result.success {
+                                            
+                                        case true:
+                                            print("success")
+                                            completion(.success(result.data))
+                                        case false:
+                                            completion(.requestErr(result.message))
+                                        }
                                     }
-                                        
                                     catch {
-//                                        completion(.pathErr)
-//                                        print(value.base64EncodedData())
-//                                        // 토큰 값을 받아옴
-//
+                                        completion(.pathErr)
+                                        print(error.localizedDescription)
                                         print(APIConstants.LoginURL)
                                     }
                                 case 400:
-                                    //400이면 실패
                                     completion(.pathErr)
                                 case 500:
-                                    //500이면 serverErr
                                     completion(.serverErr)
                                 default:
                                     break
