@@ -2,23 +2,23 @@
 
 ---
 
-> #### [1st Seminar_HelloWorld Complete.](# 1st Seminar)
+> #### [1st Seminar_HelloWorld Complete.](#1st Seminar)
 >
-> #### [1st Assignments_Soptsagram Complete.](# 1st Assignments)
+> #### [1st Assignments_Soptsagram Complete.](#1st Assignments)
 >
-> #### [2nd AdvancedSeminar_CoreLocation Complete.](# 2nd Advanced_Seminar)
+> #### [2nd AdvancedSeminar_CoreLocation Complete.](#2nd Advanced_Seminar)
 >
-> #### [2nd  Data_Send, Seminar_StackView Complete.](# 2nd Seminar)
+> #### [2nd  Data_Send, Seminar_StackView Complete.](#2nd Seminar)
 >
-> #### [ 2nd Assignments_Calculator Complete.](# 2nd Assignments)
+> #### [2nd Assignments_Calculator Complete.](#2nd Assignments)
 >
-> #### [3rd Seminar_ScrollView, CollectionView Complete.](# 3rd Seminar)
+> #### [3rd Seminar_ScrollView, CollectionView Complete.](#3rd Seminar)
 >
-> #### [4th Seminar_ServerLogin Complete.](# 4th Seminar)
+> #### [4th Seminar_ServerLogin Complete.](#4th Seminar)
 >
-> #### [5th Seminar_GS25_WITH_Design Complete.](# 5th Seminar)
+> #### [5th Seminar_GS25_WITH_Design Complete.](#5th Seminar)
 >
-> #### [6th Seminar_GS25_WITH_Server Implementing..](# 6th Seminar)
+> #### [6th Seminar_GS25_WITH_Server Implementing..](#6th Seminar)
 
 ---
 ## 1st Seminar
