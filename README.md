@@ -2,15 +2,15 @@
 
 ---
 
-> ####[1st Seminar_HelloWorld Complete.](# 1st Seminar)
+> #### [1st Seminar_HelloWorld Complete.](# 1st Seminar)
 >
 > #### [1st Assignments_Soptsagram Complete.](# 1st Assignments)
 >
 > #### [2nd AdvancedSeminar_CoreLocation Complete.](# 2nd Advanced_Seminar)
 >
-> ####[2nd  Data_Send, Seminar_StackView Complete.](# 2nd Seminar)
+> #### [2nd  Data_Send, Seminar_StackView Complete.](# 2nd Seminar)
 >
-> ####[ 2nd Assignments_Calculator Complete.](# 2nd Assignments)
+> #### [ 2nd Assignments_Calculator Complete.](# 2nd Assignments)
 >
 > #### [3rd Seminar_ScrollView, CollectionView Complete.](# 3rd Seminar)
 >
