@@ -21,7 +21,7 @@
 > #### [6th Seminar_GS25_WITH_Server Implementing..](#6th Seminar)
 
 ---
-## 1st Seminar
+#1st Seminar
 
 * practice using button for moving page
 * Autolayout
@@ -33,7 +33,7 @@
 
 ---
 
-## 1st Assignments
+#1st Assignments
 
 * practice Autolayout
 * Rounding ImageView
@@ -47,7 +47,7 @@
 
 ---
 
-## 2nd Advanced_Seminar
+#2nd Advanced_Seminar
 
 * CoreLocation
 * Info.plist에서 Location 접근요청
@@ -60,7 +60,7 @@
 
 ---
 
-## 2nd Seminar
+#2nd Seminar
 
 * Data_Send
 
@@ -114,7 +114,7 @@
 
 ---
 
-## 2nd Assignments
+#2nd Assignments
 
 * Data Formatting
 
@@ -166,7 +166,7 @@
 
 ---
 
-## 3rd Seminar
+#3rd Seminar
 * ScrollView
 * CollectionView
 
@@ -229,7 +229,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 
 ---
 
-## 4th Seminar
+#4th Seminar
 
 * Alamofire
 * HTTP, REST API
@@ -287,7 +287,7 @@ switch result.success {
 <img width="350" alt="스크린샷 2019-11-12 오후 4 05 29" src="https://user-images.githubusercontent.com/46750574/68649588-6525ca80-0566-11ea-897c-5218620d2b29.png"><img width="300" alt="스크린샷 2019-11-12 오후 4 05 59" src="https://user-images.githubusercontent.com/46750574/68649589-65be6100-0566-11ea-950d-d6009cd51d3d.png">
 
 ---
-## 5th Seminar
+#5th Seminar
 
 * XLPagerTabStrip
 * 상단 탭바
@@ -309,7 +309,7 @@ NSLayoutConstraint.activate([point1WidthConstraint, point1HeightConstraint, poin
 
 ---
 
-## 6th Seminar
+#6th Seminar
 
 * Alamofire
 * Postman
