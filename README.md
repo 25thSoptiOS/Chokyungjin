@@ -2,23 +2,23 @@
 
 ---
 
-> [1st Seminar_HelloWorld Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 1st Seminar)
+> ### [1st Seminar_HelloWorld Complete.]
 >
-> [1st Assignments_Soptsagram Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 1st Assignments)
+> ### [1st Assignments_Soptsagram Complete.]
 >
-> [2nd AdvancedSeminar_CoreLocation Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 2nd Advanced_Seminar)
+> ### [2nd AdvancedSeminar_CoreLocation Complete.]
 >
-> [2nd  Data_Send, Seminar_StackView Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 2nd Seminar)
+> ### [2nd  Data_Send, Seminar_StackView Complete.]
 >
-> [2nd Assignments_Calculator Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 2nd Assignments)
+> ### [2nd Assignments_Calculator Complete.]
 >
-> [3rd Seminar_ScrollView, CollectionView Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 3rd Seminar)
+> ### [3rd Seminar_ScrollView, CollectionView Complete.]
 >
-> [4th Seminar_ServerLogin Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 4th Seminar)
+> ### [4th Seminar_ServerLogin Complete.]
 >
-> [5th Seminar_GS25_WITH_Design Complete.](https://github.com/25thSoptiOS/Chokyungjin/# 5th Seminar)
+> ### [5th Seminar_GS25_WITH_Design Complete.]
 >
-> [6th Seminar_GS25_WITH_Server Implementing..](https://github.com/25thSoptiOS/Chokyungjin/# 6th Seminar)
+> ### [6th Seminar_GS25_WITH_Server Implementing..]
 
 ---
 ## 1st Seminar
