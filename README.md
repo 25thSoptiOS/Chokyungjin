@@ -18,7 +18,9 @@
 >
 > ### [5th Seminar_GS25_WITH_Design Complete.]
 >
-> ### [6th Seminar_GS25_WITH_Server Implementing..]
+> ### [6th Seminar_GS25_WITH_Server Complete.]
+>
+> #### [7th Seminar_SOPT_Social_Login Complete.]
 
 ---
 ## 1st Seminar
@@ -343,4 +345,31 @@ func StorageCheck() {
 ### ScreenShots
 
 <img width="300" alt="스크린샷 2019-11-25 오후 4 35 42" src="https://user-images.githubusercontent.com/46750574/69521160-b2ac2980-0fa1-11ea-9d19-36e105e5b3bf.png">
+
+---
+
+### 7_SOPT_Social_Login
+
+* Facebook Social Login
+* OpenURL
+
+```swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+           let handled = ApplicationDelegate.shared.application(app, open: url, sourceApplication: (options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String), annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+           return handled
+        
+    }
+    
+   let loginBtn = FBLoginButton()
+        loginBtn.permissions = ["email"]
+        
+        loginBtn.center = view.center
+        view.addSubview(loginBtn)
+```
+
+---
+
+### ScreenShots
+
+<img width="300" alt="스크린샷 2019-12-07 오후 5 37 28" src="https://user-images.githubusercontent.com/46750574/70372461-a4a3c480-1922-11ea-9684-d6c34b5ad4ff.png"><img width="300" alt="스크린샷 2019-12-07 오후 5 44 57" src="https://user-images.githubusercontent.com/46750574/70372462-a53c5b00-1922-11ea-9797-3ae2c9c0fef6.png">
 
