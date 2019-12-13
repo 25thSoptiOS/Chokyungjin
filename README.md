@@ -20,7 +20,7 @@
 >
 > ### [6th Seminar_GS25_WITH_Server Complete.]
 >
-> #### [7th Seminar_SOPT_Social_Login Complete.]
+> ### [7th Seminar_SOPT_Social_Login Complete.]
 
 ---
 ## 1st Seminar
